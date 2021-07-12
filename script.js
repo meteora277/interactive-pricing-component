@@ -1,5 +1,4 @@
 const range = document.getElementById("range-slider")
-
 const pageViews = document.getElementById("pageviews")
 const cost = document.getElementById("cost-month")
 
