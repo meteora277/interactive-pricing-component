@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {}
+
+main {
+    background-color: white;
+    margin: auto;
+    border-radius: .5rem;
+    box-shadow: 0rem 1rem 2rem -.5rem rgba(211, 211, 211, 0.5);
+}
+
+.background {
+    background-color: hsl(230, 100%, 99%);
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    z-index: -5;
+    border-radius: 0px 0px 0px 5rem;
+}
+
+.main-container {
+    color: hsl(225, 20%, 60%);
+    margin: 0px;
+    padding: 5rem 3rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+#pay-card {
+    background-color: white;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+    border-radius: .5rem;
+    padding-top: 2.5rem;
+}
+
+header {
+    position: relative;
+    color: hsl(227, 35%, 25%);
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 5rem;
+    z-index: 1;
+}
+
+header h3 {
+    font-size: 0.8rem;
+    color: hsl(225, 20%, 60%)
+}
+
+header h1,
+h3 {
+    position: relative;
+    z-index: 3;
+}
+
+header .circles {
+    position: absolute;
+    background: url("images/pattern-circles.svg") no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    z-index: 0;
+    bottom: -3rem;
+    left: 30%;
+}
+
+#pricing-component {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#cost {
+    display: flex;
+}
+
+#cost h2 {
+    color: hsl(227, 35%, 25%);
+    position: relative;
+    font-size: 1.8rem;
+    bottom: 1.2rem;
+}
+
+#cost-month {
+    transition-duration: 2s;
+}
+
+#slider-container {
+    width: 100%;
+}
+
+#range-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: .4rem;
+    background-color: hsl(174, 77%, 80%);
+}
+
+#range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("images/icon-slider.svg") no-repeat center, hsl(174, 86%, 45%);
+    border-radius: 50%;
+}
+
+#range-slider::-webkit-slider-thumb:active {
+    background-color: rgb(13, 163, 148);
+}
+
+#billing {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#billing p {
+    margin: 0 1rem;
+}
+
+ul {
+    padding-inline-start: 0%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.check-icon {
+    width: 1rem;
+    height: 1rem;
+    padding: 0.2rem;
+    margin-right: 1rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    background-color: hsl(227, 35%, 25%);
+    height: 3rem;
+    padding: 0.8rem 3rem;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    white-space: nowrap;
+}
+
+.discount {
+    display: inline-block;
+    visibility: hidden;
+    font-size: 0.8rem;
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    border-radius: 2rem;
+    padding: 0.2rem 0.5reml
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
